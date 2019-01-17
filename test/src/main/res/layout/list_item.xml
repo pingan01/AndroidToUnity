@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+    <TextView
+        android:id="@+id/txt_number"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="55dp"
+        android:background="@drawable/number"
+        android:text="1"
+        android:textColor="#ffffff"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:paddingBottom="5dp"
+        />
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="140dp"
+        android:layout_marginLeft="30dp"
+        android:src="@drawable/shu"
+        />
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="140dp"
+        android:src="@drawable/heng"
+        />
+    <Button
+        android:id="@+id/arrow"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="60dp"
+        android:layout_toRightOf="@id/txt_number"
+        android:background="@drawable/jiantou" />
+
+    <ImageView
+        android:id="@+id/img_spots"
+        android:layout_width="150dp"
+        android:layout_height="120dp"
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_toRightOf="@id/arrow"
+        />
+
+    <Button
+        android:id="@+id/btn_buy"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_alignTop="@+id/img_spots"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="25dp"
+        android:layout_marginTop="15dp"
+        android:layout_toRightOf="@+id/img_spots"
+        android:background="@drawable/goumaikuang"
+        android:text="购买"
+        android:textColor="#ff0000" />
+
+    <ImageView
+        android:id="@+id/img_ticket"
+        android:layout_width="100dp"
+        android:layout_height="30dp"
+        android:layout_alignTop="@+id/arrow"
+        android:layout_marginTop="10dp"
+        android:layout_alignLeft="@+id/btn_buy"
+        android:layout_alignStart="@+id/btn_buy" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/img_ticket"
+        android:layout_marginTop="30dp"
+        android:layout_alignLeft="@+id/img_ticket"
+        android:layout_alignStart="@+id/img_ticket"
+        android:textSize="15sp"
+        android:text="价格:"
+        android:id="@+id/textView" />
+    <TextView
+        android:id="@+id/txt_ticket_yuan"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="15sp"
+        android:layout_alignBaseline="@+id/textView"
+        android:layout_alignBottom="@+id/textView"
+        android:layout_toRightOf="@+id/textView"
+        android:textColor="#ff0000"
+        android:text="￥"/>
+    <TextView
+        android:id="@+id/txt_ticket_price"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="15sp"
+        android:layout_alignBaseline="@+id/txt_ticket_yuan"
+        android:layout_alignBottom="@+id/textView"
+        android:layout_toRightOf="@+id/txt_ticket_yuan"
+        android:textColor="#ff0000"
+        />
+</RelativeLayout>

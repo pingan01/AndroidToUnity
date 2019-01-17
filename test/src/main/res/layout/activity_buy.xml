@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:id="@+id/linear_buy"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:background="@drawable/title_buy">
+
+        <Button
+            android:id="@+id/btn_buyBack"
+            android:layout_width="50dp"
+            android:layout_height="30dp"
+            android:layout_gravity="center"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/bt_style_back" />
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginTop="55dp"
+            android:background="@drawable/buyticket" />
+
+        <ImageView
+            android:id="@+id/img_user"
+            android:layout_width="55dp"
+            android:layout_height="65dp"
+            android:layout_below="@id/imageView"
+            android:layout_marginTop="2dp"
+            android:layout_marginLeft="40dp"
+            android:src="@drawable/touxiang" />
+
+        <TextView
+            android:id="@+id/txt_nicheng"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/imageView"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="5dp"
+            android:layout_toRightOf="@id/img_user"
+            android:text="用户名："
+            android:textColor="#A58C77"
+            />
+
+        <TextView
+            android:id="@+id/txt_nick"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@id/txt_nicheng"
+            android:layout_toRightOf="@id/txt_nicheng"
+            android:text="1111"
+            android:textColor="#A58C77" />
+
+        <TextView
+            android:id="@+id/txt_jifen"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@id/txt_nicheng"
+            android:layout_below="@id/txt_nicheng"
+            android:layout_marginTop="25dp"
+            android:text="积分："
+            android:textColor="#A58C77" />
+
+        <TextView
+            android:id="@+id/txt_fen"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@id/txt_jifen"
+            android:layout_toRightOf="@id/txt_jifen"
+            android:text="1000"
+            android:textColor="#A58C77" />
+
+        <ListView
+            android:id="@+id/lst"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="180dp"
+            android:background="@drawable/list_bg"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:cacheColorHint="#00000000"></ListView>
+
+    </RelativeLayout>
+</RelativeLayout>

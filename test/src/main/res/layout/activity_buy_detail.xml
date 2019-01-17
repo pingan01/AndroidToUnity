@@ -1,0 +1,224 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:id="@+id/linear_pay"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/online_bg">
+
+        <Button
+            android:id="@+id/btn_detail_back"
+            android:layout_width="50dp"
+            android:layout_height="30dp"
+            android:layout_gravity="center"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/bt_style_back" />
+
+        <RelativeLayout
+            android:id="@+id/rela_content"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="30dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginTop="100dp"
+            android:background="@drawable/list_bg">
+
+            <RelativeLayout
+                android:id="@+id/relat_one"
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:layout_marginTop="30dp">
+
+                <ImageView
+                    android:id="@+id/img_heng_one"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/heng" />
+
+                <TextView
+                    android:id="@+id/txt_fangshi"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="25dp"
+                    android:text="支付方式"
+                    android:textSize="22sp" />
+
+                <ImageView
+                    android:id="@+id/img_weixinpay"
+                    android:layout_width="wrap_content"
+                    android:layout_height="35dp"
+                    android:layout_marginBottom="25dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="60dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_toRightOf="@id/txt_fangshi"
+                    android:background="@drawable/xuanzeguang"
+                    android:paddingBottom="8dp"
+                    android:paddingRight="50dp"
+                    android:paddingTop="8dp"
+                    android:src="@drawable/weichat_pay" />
+
+                <Button
+                    android:id="@+id/btn_select"
+                    android:layout_width="40dp"
+                    android:layout_height="35dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="25dp"
+                    android:layout_marginTop="20dp"
+                    android:background="@drawable/bt_style_select" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/relat_two"
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:layout_below="@id/relat_one">
+
+                <ImageView
+                    android:id="@+id/img_heng_two"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/heng" />
+
+                <TextView
+                    android:id="@+id/txt_fapiao"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="25dp"
+                    android:text="发票信息"
+                    android:textSize="22sp" />
+
+                <Button
+                    android:id="@+id/pay_arrow_info"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="40dp"
+                    android:layout_marginTop="25dp"
+                    android:background="@drawable/bt_style_pay_arrow" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/relat_three"
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:layout_below="@id/relat_two">
+
+                <ImageView
+                    android:id="@+id/img_heng_three"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/heng" />
+
+                <TextView
+                    android:id="@+id/txt_cheap"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="25dp"
+                    android:text="优惠券"
+                    android:textSize="22sp" />
+
+                <Button
+                    android:id="@+id/pay_arrow_cheap"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="40dp"
+                    android:layout_marginTop="25dp"
+                    android:background="@drawable/bt_style_pay_arrow" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/relat_four"
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:layout_below="@id/relat_three">
+
+                <ImageView
+                    android:id="@+id/img_heng_four"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/heng" />
+
+                <TextView
+                    android:id="@+id/txt_shangpin"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="25dp"
+                    android:text="商品列表"
+                    android:textSize="22sp" />
+
+                <ImageView
+                    android:id="@+id/img_pay"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="30dp"
+                    android:layout_marginTop="30dp" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/relat_five"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_below="@id/relat_four">
+
+                <ImageView
+                    android:id="@+id/img_heng_five"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/heng" />
+
+                <TextView
+                    android:id="@+id/txt_pay"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="30dp"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="30dp"
+                    android:text="实付金额：" />
+
+                <TextView
+                    android:id="@+id/yuan"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBaseline="@id/txt_pay"
+                    android:layout_toRightOf="@id/txt_pay"
+                    android:text="￥"
+                    android:textColor="#ff0000"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:id="@+id/pay_money"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBaseline="@id/yuan"
+                    android:layout_toRightOf="@id/yuan"
+                    android:textColor="#ff0000"
+                    android:textSize="15sp" />
+
+                <Button
+                    android:id="@+id/btn_pay"
+                    android:layout_width="120dp"
+                    android:layout_height="40dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginTop="20dp"
+                    android:background="@drawable/bt_style_pay" />
+            </RelativeLayout>
+        </RelativeLayout>
+
+    </RelativeLayout>
+</RelativeLayout>

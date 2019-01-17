@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <com.amap.api.maps.MapView
+        android:id="@+id/map"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <RelativeLayout
+        android:id="@+id/linear_top"
+        android:layout_width="match_parent"
+        android:layout_height="75dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:background="@drawable/title">
+
+        <Button
+            android:id="@+id/btn_back"
+            android:layout_width="50dp"
+            android:layout_height="30dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/bt_style_back"
+            android:gravity="center" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/menu"
+        android:layout_width="60dp"
+        android:layout_height="250dp"
+        android:layout_alignParentLeft="true"
+        android:layout_marginTop="100dp"
+        android:background="@drawable/bg_menu_nav"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <Button
+            android:id="@+id/bt_scenic_spots"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:background="@drawable/scenic1" />
+
+        <Button
+            android:id="@+id/bt_play"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:background="@drawable/play1" />
+
+        <Button
+            android:id="@+id/bt_show"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:background="@drawable/show1" />
+
+        <Button
+            android:id="@+id/bt_hotel"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:background="@drawable/hotel1" />
+
+        <Button
+            android:id="@+id/bt_food"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:background="@drawable/food1" />
+
+        <Button
+            android:id="@+id/bt_relaxation"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:background="@drawable/relaxation1" />
+
+        <Button
+            android:id="@+id/bt_shopping"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:background="@drawable/shopping1" />
+
+        <Button
+            android:id="@+id/bt_bus"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:background="@drawable/bus1" />
+
+        <Button
+            android:id="@+id/stop"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:background="@drawable/stop1" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/bt_menu"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="150dp"
+        android:layout_toRightOf="@id/menu"
+        android:background="@drawable/logo_wisdom" />
+
+    <Button
+        android:id="@+id/btn_arrow_left"
+        android:layout_width="20dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="150dp"
+        android:layout_toRightOf="@id/menu"
+        android:background="@drawable/arrow_left1"
+        android:visibility="gone" />
+
+    <Button
+        android:id="@+id/btn_arrow"
+        android:layout_width="20dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="160dp"
+        android:layout_toRightOf="@id/bt_menu"
+        android:background="@drawable/arrow_right1" />
+
+    <Button
+        android:id="@+id/switch_map"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_alignLeft="@+id/bt_location"
+        android:layout_alignParentBottom="true"
+        android:layout_alignStart="@+id/bt_location"
+        android:layout_marginBottom="20dp"
+        android:background="@drawable/bt_style_2d"
+        android:text="2D"
+        android:textColor="#A58C77"
+        android:textSize="15sp"
+        android:textStyle="italic" />
+    <Button
+        android:id="@+id/bt_location"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:background="@drawable/position"
+        android:layout_marginBottom="70dp"
+        android:layout_marginRight="15dp"
+
+        />
+</RelativeLayout>
